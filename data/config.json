@@ -1,0 +1,11 @@
+{
+    "numAssets": 1000,
+    "numTraders": 100,
+    "numTimeSteps": 1000,
+    "dataSource": "initial_market.csv",
+    "historicalDataSource": "historical_data.csv",
+    "outputDirectory": "results/",
+    "snapshotInterval": 100,
+    "loggingEnabled": true,
+    "loggingLevel": "INFO"
+  }
