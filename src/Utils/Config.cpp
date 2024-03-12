@@ -4,23 +4,39 @@
 
 using json = nlohmann::json;
 
-int Config::getNumAssets() {
+int Config::numAssets = 0;
+int Config::numTraders = 0;
+int Config::numTimeSteps = 0;
+
+void Config::loadConfig() {
     std::ifstream file("data/config.json");
-    json config;
-    file >> config;
-    return config["numAssets"];
+    if (file.is_open()) {
+        json config;
+        file >> config;
+        numAssets = config["numAssets"];
+        numTraders = config["numTraders"];
+        numTimeSteps = config["numTimeSteps"];
+        file.close();
+    }
+}
+
+int Config::getNumAssets() {
+    if (numAssets == 0) {
+        loadConfig();
+    }
+    return numAssets;
 }
 
 int Config::getNumTraders() {
-    std::ifstream file("data/config.json");
-    json config;
-    file >> config;
-    return config["numTraders"];
+    if (numTraders == 0) {
+        loadConfig();
+    }
+    return numTraders;
 }
 
 int Config::getNumTimeSteps() {
-    std::ifstream file("data/config.json");
-    json config;
-    file >> config;
-    return config["numTimeSteps"];
+    if (numTimeSteps == 0) {
+        loadConfig();
+    }
+    return numTimeSteps;
 }
