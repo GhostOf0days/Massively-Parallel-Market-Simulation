@@ -1,4 +1,4 @@
-# Parallel Financial Market Simulation
+# Massively Parallel Market Simulation
 
 This project implements a parallel financial market simulation using MPI (Message Passing Interface) and CUDA (Compute Unified Device Architecture). The simulation models the behavior of a simplified financial market with multiple assets and traders, each employing different trading strategies.
 
@@ -35,7 +35,7 @@ THIS IS A TEST OF CLAUDE 3 OPUS CODE GENERATION CAPABILITIES.
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/parallel-market-simulation.git
+   git clone https://github.com/GhostOf0days/Massively-Parallel-Market-Simulation.git
    cd parallel-market-simulation
    ```
 
