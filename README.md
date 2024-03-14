@@ -36,7 +36,7 @@ THIS IS A TEST OF CLAUDE 3 OPUS CODE GENERATION CAPABILITIES.
 1. Clone the repository:
    ```bash
    git clone https://github.com/GhostOf0days/Massively-Parallel-Market-Simulation.git
-   cd parallel-market-simulation
+   cd Massively-Parallel-Market-Simulation
    ```
 
 2. Create a build directory and navigate to it:
